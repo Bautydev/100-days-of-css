@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@100..900&display=swap');
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: linear-gradient(45deg, #44399f,#4ec3ca );
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.numeros{
+    display: flex;
+    align-items: center;
+}
+.uno{
+    width: 50px;
+    height: 23px;
+    rotate: -45deg;
+    background: linear-gradient(90deg, #fff, #efefefa6);
+    transform: translateY(-5px) translateX(30px);
+    border-radius: 5px;
+}
+.uno2{
+    height: 100px;
+    width: 24px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px grey;
+    z-index: 2;
+}
+.cero1{
+    height: 100px;
+    width: 100px;
+    border: 25px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transform: translateX(-10px);
+    z-index: 1;
+    box-shadow: 0 1px 2px grey;
+}
+.cero2{
+    height: 100px;
+    width: 100px;
+    border: 25px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transform: translateX(-22px);
+    z-index: 0;
+}
+.days{
+    font-family: "Courier Prime", monospace;
+    font-weight: bold;
+    color: white;
+    font-size: 5em;
+    transform: translateX(10px);
+    margin-top: -8px;
+}
+.cch{
+    font-family: "Courier Prime", monospace;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    transform: translateX(9px);
+    margin-top: -25px;
+}

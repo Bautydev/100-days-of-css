@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Survey-FreeCodeCamp</title>
+    <link rel="stylesheet" href="dia-3.css">
+</head>
+<body>
+    <h1 id="title">Register</h1>
+    <p id="description">Register to access better features</p>
+    <form id="survey-form">
+        <label for="name">
+            Name
+            <input placeholder="Enter Your Name" type="text" id="name" name="inp-name">
+        </label>
+        <label for="email">Email
+            <input placeholder="Enter Your Email" type="email" id="email" name="inp-email" required>
+        </label>
+        <label for="number">Year
+            <input placeholder="Year of Birth" type="number" min="1024" max="2005" id="number">
+        </label>
+        <label for="referrer">Save this session
+            <select name="referrer" id="referrer">
+                <option value="1">do not save the session</option>
+                <option value="2">save session</option>
+            </select>
+        </label><legend>
+            Account type</legend>
+        <label class="inline" for="account-personal">
+            <input id="account-personal" type="radio" name="radio" checked>
+            Personal
+        </label>
+        <label class="inline" for="account-business">
+            <input id="account-business" type="radio" name="radio">
+            Business
+        </label>
+        <label for="bio">Provide a bio:
+            <textarea rows="3" cols="30" id="bio" name="bio" rows="3" cols="30" placeholder="I like working on the beach..."></textarea>
+        </label>
+        <label for="terms-and-conditions">
+            <input value="tac" id="terms-and-conditions" type="checkbox" required /> I accept the <a href="#">terms and conditions</a>
+        </label>
+        <input type="submit" value="submit" id="submit">
+    </form>
+</body>
+</html>

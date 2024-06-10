@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    height: 100px;
+    width: 100px;
+    border: 30px dotted white;
+    border-radius: 50%;
+    transition: all infinite;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+    0%{
+        opacity: .2;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: .2;
+    }
+}
